@@ -1,0 +1,7 @@
+[swarm]
+184.72.168.188
+54.161.193.156
+
+[swarm:vars]
+ansible_connection=ssh
+ansible_port=22

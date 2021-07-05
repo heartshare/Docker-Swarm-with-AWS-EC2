@@ -1,0 +1,14 @@
+---
+- name: Roles
+  hosts: all
+  gather_facts: yes
+  become: true
+  vars_files:
+    - ./swarm/vars/main.yml
+  tasks:
+    - name: Swarm configuration
+      import_role:
+        name: swarm
+    - name: Docker container deployment
+      import_role:
+        name: docker

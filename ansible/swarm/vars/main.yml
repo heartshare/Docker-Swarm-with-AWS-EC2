@@ -1,0 +1,4 @@
+---
+# vars file for swarm
+vm_distro: focal
+vm_user: ubuntu
