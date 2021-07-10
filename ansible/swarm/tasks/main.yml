@@ -1,4 +1,11 @@
 ---
+# Update packages
+- name: Update apt cache
+  apt: update_cache=yes cache_valid_time=3600
+
+- name: Upgrade all apt packages
+  apt: upgrade=dist
+
 # Install docker engine:
 # https://docs.docker.com/engine/install/ubuntu/
 - name: Install required system packages
