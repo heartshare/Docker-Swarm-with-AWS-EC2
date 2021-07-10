@@ -59,9 +59,9 @@
     path: /opt/nginx-ssl
     state: directory
 
-# Git clone repository
-- name: Clone farazforoozan.nl repository
-  git:
-    repo: https://github.com/foroozf001/farazforoozan.nl.git
-    dest: /opt/nginx-ssl
-    version: main
+# # Git clone repository
+# - name: Clone farazforoozan.nl repository
+#   git:
+#     repo: https://github.com/foroozf001/farazforoozan.nl.git
+#     dest: /opt/nginx-ssl
+#     version: main

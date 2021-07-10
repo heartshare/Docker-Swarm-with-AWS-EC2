@@ -9,6 +9,6 @@
     - name: Swarm configuration
       import_role:
         name: swarm
-    - name: Docker container deployment
-      import_role:
-        name: docker
+    # - name: Docker container deployment
+    #   import_role:
+    #     name: docker

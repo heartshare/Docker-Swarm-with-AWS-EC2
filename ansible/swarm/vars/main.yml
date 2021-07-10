@@ -1,5 +1,5 @@
 ---
 # vars file for swarm
-vm_distro: focal
+vm_distro: bionic
 vm_user: ubuntu
 docker_compose_version: "1.29.2"
