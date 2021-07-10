@@ -30,3 +30,18 @@
 - name: Install docker module for Python
   pip:
     name: docker
+
+# Install docker compose
+- name: Download docker-compose
+  get_url:
+    url : https://github.com/docker/compose/releases/download/{{docker_compose_version}}/docker-compose-Linux-x86_64
+    dest: ~/docker-compose
+    mode: '+x'
+
+- name: Check docker-compose exists
+  stat: path=~/docker-compose
+  register: docker_compose
+
+- name: Move docker-compose to /usr/local/bin/docker-compose
+  command: mv ~/docker-compose /usr/local/bin/docker-compose
+  when: docker_compose.stat.exists
